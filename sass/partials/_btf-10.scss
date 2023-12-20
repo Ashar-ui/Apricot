@@ -1,0 +1,96 @@
+.btf-10 {
+    padding-bottom: 125px;
+    .container {
+        padding: 0;
+        .hasting-inner {
+            max-width: 1088px;
+            margin: 0 auto;
+            @media (max-width: 1365px) {
+                padding: 0 35px;
+            }
+            .hasting-heading {
+                max-width: 982px;
+                margin: 0 auto 64px;
+                @media (max-width: 640px) {
+                    margin: 0 auto 43px;
+                }
+                h2 {
+                    font-size: 175px;
+                    font-weight: 400;
+                    letter-spacing: -2px;
+                    line-height: 167px;
+                    color: $dark;
+                    text-align: right;
+                    margin-right: 38px;
+                    @media (max-width: 991px) {
+                        font-size: 131px;
+                        line-height: 140px;
+                    }
+                    @media (max-width: 767px) {
+                        font-size: 110px;
+                        line-height: 120px;
+                    }
+                    @media (max-width: 640px) {
+                        font-size: 65px;
+                        line-height: 94px;
+                    }
+                    @media (max-width: 480px) {
+                        font-size: 54px;
+                        text-align: center;
+                    }
+                }
+                h3 {
+                    font-size: 53px;
+                    line-height: 46px;
+                    color: #000;
+                    font-weight: 400;
+                    @media (max-width: 991px) {
+                        font-size: 40px;
+                        line-height: 46px;
+                    }
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+            .hasting-content {
+                p {
+                    font-size: 20px;
+                    line-height: 38px;
+                    font-family: 'Playfair Display', serif;
+                    margin: 0 0 23px;
+                    font-weight: 400;
+                }
+                .qna {
+                    margin: 0 0 55px;
+                    &:nth-child(3) {
+                        margin-top: 51px;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #000;
+                        font-family: 'lato', sans-serif;
+                        font-weight: 400;
+                        margin: 0;
+                    }
+                    h4 {
+                        font-size: 36px;
+                        line-height: 48px;
+                        color: $dark;
+                        font-weight: 400;
+                        margin-bottom: 21px;
+                        @media (max-width: 480px) {
+                            font-size: 32px;
+                            line-height: 42px;
+                            letter-spacing: -0.5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

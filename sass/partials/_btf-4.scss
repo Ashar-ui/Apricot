@@ -1,0 +1,218 @@
+    .btf-4 {
+        padding: 66px 0 90px;
+        position: relative;
+        @media (max-width: 480px) {
+            padding-bottom: 0;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../images/Group\ 2999.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: -111px;
+            left: 0px;
+            width: 100%;
+            z-index: 0;
+            height: 387px;
+            @media (max-width: 480px) {
+                bottom: -229px;
+                background-position: 26%;
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            background: linear-gradient(180deg, rgba(254, 254, 254, 1) 17%, rgba(232, 232, 232, 1) 86%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 62%);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            top: -125px;
+            left: 0px;
+            width: 100%;
+            z-index: -3;
+            height: 1678.33px;
+        }
+        .container {
+            @media (max-width: 1365px) {
+                padding: 0 20px;
+            }
+            @media (max-width: 480px) {
+                padding: 0;
+            }
+            .cards-outer {
+                max-width: 1088px;
+                margin: 0 auto;
+                width: 100%;
+                z-index: 1;
+                position: relative;
+                .top {
+                    h2 {
+                        font-size: 110px;
+                        font-weight: 400;
+                        line-height: 116px;
+                        color: $dark;
+                        text-align: center;
+                        letter-spacing: -5px;
+                        margin-bottom: 29px;
+                        @media (max-width: 1024px) {
+                            font-size: 99px;
+                        }
+                        @media (max-width: 640px) {
+                            font-size: 70px;
+                            line-height: 76px;
+                            text-align: left;
+                            padding: 0 34px;
+                            margin-bottom: 75px;
+                        }
+                    }
+                    p {
+                        font-size: 32px;
+                        line-height: 48px;
+                        font-style: italic;
+                        color: #000;
+                        font-weight: 400;
+                        max-width: 1034px;
+                        margin: 0 auto;
+                        @media (max-width: 480px) {
+                            padding: 0 35px;
+                        }
+                    }
+                }
+                .owl-theme {
+                    .owl-dots {
+                        position: absolute;
+                        bottom: 50px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        .owl-dot {
+                            span {
+                                border: 2px solid #fff;
+                                background-color: transparent;
+                                width: 22px;
+                                height: 22px;
+                                transition: 0.5s all ease;
+                                &:hover {
+                                    background-color: #fff;
+                                }
+                                &:active {
+                                    background-color: #fff;
+                                }
+                            }
+                        }
+                        .owl-dot.active {
+                            span {
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+                .cards {
+                    margin-top: 79px;
+                    @include justify (space-between);
+                    flex-wrap: wrap;
+                    @media (max-width: 640px) {
+                        margin-bottom: 103px;
+                    }
+                    &:hover {
+                        transform: none;
+                    }
+                    .card {
+                        max-width: 536px;
+                        width: 100%;
+                        max-height: 597px;
+                        background-color: $dark;
+                        padding: 119px 0 114px;
+                        position: relative;
+                        perspective: 1000px;
+                        @media (max-width: 1365px) {
+                            max-width: 477px;
+                        }
+                        @media (max-width: 1024px) {
+                            max-width: 462px;
+                        }
+                        @media (max-width: 991px) {
+                            margin: 0 auto;
+                        }
+                        @media (max-width: 480px) {
+                            min-height: 601px;
+                            height: 100%;
+                        }
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            margin-bottom: 15px;
+                        }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            border: 1px solid #fff;
+                            background-color: transparent;
+                            top: 30px;
+                            left: 30px;
+                            width: calc(100% - 58px);
+                            height: 536.3px;
+                            z-index: -1;
+                            @media (max-width: 480px) {
+                                width: calc(100% - 26px);
+                                left: 12px;
+                            }
+                        }
+                        h3 {
+                            font-size: 52px;
+                            line-height: 92px;
+                            max-width: 340px;
+                            font-weight: 400;
+                            letter-spacing: -2px;
+                            margin: 0 auto;
+                            background-color: $dark;
+                            margin-bottom: 86px;
+                            position: relative;
+                            text-align: center;
+                            color: #fff;
+                            @media (max-width: 480px) {
+                                margin-bottom: 35px;
+                                font-size: 38px;
+                                max-width: 329px;
+                            }
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                border: 1px solid #fff;
+                                background-color: transparent;
+                                top: -45px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                width: calc(100% - 160px);
+                                height: 167px;
+                                z-index: -1;
+                                @media (max-width: 480px) {
+                                    width: calc(100% - 148px);
+                                    height: 119px;
+                                    top: -17px;
+                                }
+                            }
+                        }
+                        p {
+                            font-size: 16px;
+                            line-height: 32px;
+                            font-weight: 400;
+                            color: #fff;
+                            font-family: 'lato', sans-serif;
+                            max-width: 393px;
+                            margin: 0 auto;
+                            text-align: center;
+                            @media (max-width: 480px) {
+                                max-width: 302px;
+                                line-height: 32px;
+                                font-size: 16px;
+                            }
+                            @media (max-width: 374px) {
+                                max-width: 279px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

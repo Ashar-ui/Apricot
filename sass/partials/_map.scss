@@ -1,0 +1,100 @@
+.map {
+    background-image: url('../images/map.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 713px;
+    background-attachment: fixed;
+    max-width: 100%;
+    @media (max-width: 640px) {
+        background-position: 21%;
+    }
+    .container {
+        .map-inner {
+            max-width: 904px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 3;
+            .sign {
+                max-width: 145px;
+                margin: 15px auto 0;
+                text-align: center;
+                @media (max-width: 640px) {
+                    max-width: 92px;
+                    min-height: 92px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .map-right {
+                max-width: 279px;
+                margin-left: auto;
+                margin-top: 62px;
+                margin-right: 46px;
+                @media (max-width: 991px) {
+                    margin: 66px auto;
+                    text-align: center;
+                }
+                @media (max-width: 640px) {
+                    margin: 36px auto;
+                }
+                h3 {
+                    font-size: 56px;
+                    line-height: 75px;
+                    font-weight: 400;
+                    color: $dark;
+                    letter-spacing: 3px;
+                    @media (max-width: 991px) {
+                        font-size: 46px;
+                        line-height: 63px;
+                    }
+                }
+                .address {
+                    max-width: 251px;
+                    color: #000;
+                    font-size: 26px;
+                    line-height: 36px;
+                    font-weight: 400;
+                    margin-bottom: 33px;
+                    a {
+                        font-size: 16px;
+                        color: $dark;
+                        font-weight: 700;
+                        font-family: 'lato', sans-serif;
+                    }
+                }
+                h4 {
+                    font-size: 26px;
+                    line-height: 32px;
+                    color: #000;
+                    font-weight: 400;
+                    margin-bottom: 27px;
+                    a {
+                        color: #000;
+                    }
+                }
+                .social-links {
+                    margin-top: 11px;
+                    ul {
+                        @include justify(space-between);
+                        li {
+                            a {
+                                i {
+                                    font-size: 43px;
+                                    line-height: 100%;
+                                    color: $dark;
+                                }
+                                img {
+                                    font-size: 0;
+                                    line-height: 100%;
+                                    vertical-align: bottom;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

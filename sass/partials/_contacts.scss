@@ -1,0 +1,195 @@
+.contacts {
+    min-height: 944px;
+    height: 100%;
+    position: relative;
+    padding-top: 238px;
+    &::before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(180deg, rgba(195, 195, 195, 1) 13%, rgba(232, 232, 232, 1) 56%);
+        clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 81%);
+        min-height: 1146px;
+        height: 1146px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        @media (max-width: 991px) {
+            height: 1405px;
+            clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
+        }
+        @media (max-width: 640px) {
+            height: 1240px;
+        }
+    }
+    .container {
+        .contact-inner {
+            max-width: 904px;
+            margin: 0 auto;
+            z-index: 3;
+            position: relative;
+            h3 {
+                font-size: 145px;
+                line-height: 151px;
+                color: $dark;
+                letter-spacing: -7px;
+                font-weight: 400;
+                @media (max-width: 991px) {
+                    font-size: 121px;
+                    line-height: 137px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 101px;
+                    line-height: 115px;
+                }
+                @media (max-width: 640px) {
+                    font-size: 78px;
+                    line-height: 88px;
+                    letter-spacing: -1px;
+                }
+                @media (max-width:480px) {
+                    font-size: 52px;
+                    line-height: 67px;
+                }
+                @media (max-width: 374px) {
+                    font-size: 41px;
+                }
+            }
+            h4 {
+                font-size: 33px;
+                line-height: 39px;
+                color: #000;
+                font-weight: 400;
+                @media (max-width: 991px) {
+                    font-size: 24px;
+                }
+                @media (max-width: 680px) {
+                    font-size: 24px;
+                    text-align: center;
+                    padding-right: 22px;
+                }
+            }
+            form {
+                @include justify(space-between);
+                flex-wrap: wrap;
+                input {
+                    text-transform: capitalize;
+                    width: 28%;
+                    min-height: 70px;
+                    height: 100%;
+                    padding-left: 17px;
+                    border: 1px solid #000;
+                    @include justify(center);
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #000;
+                    font-family: 'Open Sans', sans-serif;
+                    outline: none;
+                    background-color: transparent;
+                    color: #000;
+                    margin: 38px 0 9px;
+                    border-bottom-width: 2px;
+                    @media (max-width: 991px) {
+                        width: 80%;
+                        margin: 29px auto 9px;
+                    }
+                    &:focus {
+                        border: 1px solid $dark;
+                        ;
+                    }
+                    &:nth-child(2) {
+                        width: 38%;
+                        @media (max-width: 991px) {
+                            width: 80%;
+                            margin: 9px auto 9px;
+                        }
+                    }
+                    &:nth-child(3) {
+                        @media (max-width: 991px) {
+                            width: 80%;
+                            margin: 9px auto 9px;
+                        }
+                    }
+                    &::placeholder {
+                        color: #000;
+                    }
+                }
+                textarea {
+                    padding-top: 25px;
+                    text-transform: capitalize;
+                    width: 100%;
+                    font-family: 'Open Sans', sans-serif;
+                    height: 100%;
+                    padding-left: 17px;
+                    border: 1px solid #000;
+                    @include justify(center);
+                    font-size: 16px;
+                    line-height: 22px;
+                    outline: none;
+                    color: #000;
+                    font-family: 'Open Sans', sans-serif;
+                    background-color: transparent;
+                    color: #000;
+                    resize: none;
+                    min-height: 146px;
+                    border-bottom-width: 2px;
+                    @media (max-width: 991px) {
+                        margin: 8px auto 0;
+                        width: 80%;
+                    }
+                    &:focus {
+                        border: 1px solid $dark;
+                    }
+                    &::placeholder {
+                        color: #000;
+                    }
+                }
+                button {
+                    max-width: 177px;
+                    min-height: 61px;
+                    width: 100%;
+                    margin: 36px auto 19px;
+                    @include justify(center);
+                }
+            }
+        }
+        p {
+            max-width: 163px;
+            margin: 0 auto 42px;
+            text-align: center;
+            span {
+                color: $dark;
+            }
+        }
+        .or-call {
+            p {
+                font-size: 36px;
+                line-height: 42px;
+                color: #000;
+                font-weight: 400;
+                max-width: 400px;
+                margin: 0 auto;
+                width: 100%;
+                @media (max-width: 480px) {
+                    font-size: 36px;
+                }
+                a {
+                    display: inline;
+                    color: $dark;
+                    margin-left: 10px;
+                    font-weight: 700;
+                    @media (max-width: 640px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .sign {
+            max-width: 145px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

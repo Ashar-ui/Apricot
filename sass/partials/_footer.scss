@@ -1,0 +1,191 @@
+footer {
+    background-color: #F7F7F7;
+    .container {
+        .footer-inner {
+            max-width: 1095px;
+            margin: 0 auto;
+            @include justify (space-between);
+            width: 100%;
+            position: relative;
+            @media (max-width: 767px) {
+                flex-direction: column;
+                padding-bottom: 41px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 178px;
+                bottom: 0;
+                left: 51.5%;
+                transform: translateX(-50%);
+                background-color: $dark;
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+            .footer-left {
+                @include justify(space-between);
+                padding: 87px 0 45px;
+                @media (max-width: 767px) {
+                    width: 100%;
+                    flex-direction: column;
+                    padding: 34px 0 21px;
+                }
+                .conway {
+                    .logo-2 {
+                        margin-bottom: 18px;
+                        max-width: 320px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    span {
+                        color: #000;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        margin-left: 20px;
+                        font-family: 'Open Sans', sans-serif;
+                        a {
+                            color: #000;
+                        }
+                        @media (max-width: 767px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .footer-mid {
+                @include justify (initial);
+                margin: 0 252px 0 91px;
+                @media (max-width: 991px) {
+                    margin: 0 149px 0 51px;
+                }
+                @media (max-width: 767px) {
+                    margin: 0 auto;
+                }
+                .list-1 {
+                    width: 100px;
+                    text-align: right;
+                    margin-top: 44px;
+                    margin-right: 30px;
+                    @media (max-width: 767px) {
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                    ul {
+                        width: 100%;
+                        li {
+                            a {
+                                font-size: 12px;
+                                font-family: 'lato', sans-serif;
+                                line-height: 18px;
+                                color: #000;
+                                transition: 0.5s all ease;
+                                @media (max-width: 767px) {
+                                    color: #444444;
+                                }
+                                &:hover {
+                                    font-weight: 700;
+                                    color: $dark;
+                                }
+                            }
+                        }
+                    }
+                }
+                .list-2 {
+                    text-align: left;
+                    @media (max-width: 767px) {
+                        display: none;
+                        width: 100px;
+                    }
+                    ul {
+                        width: 100%;
+                        li {
+                            a {
+                                font-size: 12px;
+                                font-family: 'lato', sans-serif;
+                                line-height: 18px;
+                                color: #000;
+                                transition: 0.5s all ease;
+                                &:hover {
+                                    font-weight: 700;
+                                    color: $dark;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-right {
+                .apricot {
+                    margin-top: 44px;
+                    @media (max-width: 767px) {
+                        text-align: center;
+                        width: 374px;
+                        margin: 36px auto 0;
+                    }
+                    @media (max-width:480px) {
+                        width: 100%;
+                    }
+                    span {
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #000;
+                        font-family: 'lato', sans-serif;
+                        font-weight: 400;
+                        @media (max-width: 767px) {
+                            color: #444444;
+                        }
+                        @media (max-width: 480px) {
+                            width: 337px;
+                        }
+                        @media (max-width: 374px) {
+                            width: 271px;
+                        }
+                    }
+                    a {
+                        @media (max-width: 767px) {
+                            margin: 0 auto;
+                            max-width: 201px;
+                            width: 100%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .main-logo {
+                        max-width: 201px;
+                        margin-top: 9px;
+                        img {
+                            width: 100%;
+                        }
+                        @media (max-width: 767px) {
+                            margin: 9px auto 0;
+                        }
+                    }
+                }
+                .rights-reserved {
+                    display: none;
+                    color: #000;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    margin-left: 20px;
+                    font-family: 'Open Sans', sans-serif;
+                    a {
+                        color: #000;
+                        @media (max-width: 767px) {
+                            max-width: 158px;
+                        }
+                    }
+                    @media (max-width: 767px) {
+                        display: block;
+                        margin-top: 17px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.btf-8 {
+    padding: 52px 0 95px;
+    position: relative;
+    .container {
+        .owl-theme {
+            .owl-dots {
+                margin: 46px auto 0;
+                .owl-dot {
+                    span {
+                        border: 2px solid $dark;
+                        background-color: transparent;
+                        width: 22px;
+                        height: 22px;
+                        transition: 0.5s all ease;
+                        @media (max-width: 480px) {
+                            width: 14px;
+                            height: 14px;
+                        }
+                        &:hover {
+                            background-color: $dark;
+                        }
+                        &:active {
+                            background-color: $dark;
+                        }
+                    }
+                }
+                .owl-dot.active {
+                    span {
+                        background-color: $dark;
+                    }
+                }
+            }
+        }
+        .owl-carousel {
+            position: initial;
+            .owl-nav {
+                button.owl-prev {
+                    background-image: url('../images/left.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    max-width: 58px;
+                    min-height: 80px;
+                    width: 100%;
+                    position: absolute;
+                    top: 27%;
+                    left: 0px;
+                    z-index: 1;
+                    margin: 0;
+                    span {
+                        display: none;
+                    }
+                    &:hover {
+                        background-image: url("../images/left.png");
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+                button.owl-next {
+                    background-image: url("../images/right.png");
+                    background-position: center;
+                    background-size: cover;
+                    width: 58px;
+                    min-height: 80px;
+                    position: absolute;
+                    top: 27%;
+                    right: 0px;
+                    border-radius: 0px;
+                    margin: 0;
+                    span {
+                        display: none;
+                    }
+                    &:hover {
+                        background-image: url("../images/right.png");
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+        .btf-8-slide {
+            .slide-1 {
+                text-align: center;
+                .card-image {
+                    max-width: 258px;
+                    margin: 0 auto;
+                    min-height: 202.88px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .card-text {
+                    h3 {
+                        max-width: 339px;
+                        margin: 23px auto 21px;
+                        width: 100%;
+                        font-size: 28px;
+                        font-weight: 400;
+                        line-height: 34px;
+                        color: $dark;
+                    }
+                    p {
+                        max-width: 298px;
+                        width: 100%;
+                        margin: 0 auto;
+                        color: #000;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
